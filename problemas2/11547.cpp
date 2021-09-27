@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main(){	int  numero,n;
+int main(){
+	int  numero,n;
 	std::cin>>numero;
 	for (unsigned int i = 0; i < numero; i += 1)
 	{
@@ -17,9 +18,10 @@ int main(){	int  numero,n;
 		//centesima digito
 		n=n/10;
 		n=n % 10;
-//		n=abs(n);
-//std::cout<<std::endl	;
-	std::cout<<n;
+		n=abs(n);
+
+	std::cout<<n<<std::endl;
+
 	}
 
 	
