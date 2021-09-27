@@ -1,10 +1,16 @@
 #include <iostream>
 #include <string>
 
-int suma(int suma){
+int sumadi(int numero){
+	int num,sum=0;
+	 while(numero != 0) {
+        num = numero % 10;
+        numero /= 10;
+        sum += num;
+    }
+
 	
-	
-	return suma;
+	return sum;
 }
 int main(){
 	int t,n;
@@ -14,7 +20,7 @@ int main(){
 	{
 		std::cin>>n;
 		n=abs(n);
-			t=suma(n);
+			t=sumadi(n);
 			if (t<10)
 			{
 				std::cout<<2;
