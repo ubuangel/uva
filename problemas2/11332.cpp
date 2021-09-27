@@ -23,13 +23,13 @@ int main(){
 			t=sumadi(n);
 			
 			 while(t!=0){             
-                   	 t = t/10;         
-                   	cifras++;          
+                   		 t = t/10;         
+                   		cifras++;          
             			}
             			
-            			if (t==1)
+            			if (cifras==1)
             			{
-            				std::cout<<"2";
+            				std::cout<<"2"<<std::endl;
             			}
             			
 
