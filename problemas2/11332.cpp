@@ -4,20 +4,20 @@
 int suma(int suma){
 	
 	
-	return resultado;
+	return suma;
 }
 int main(){
-	int veces,n;
+	int t,n;
 	
 
 	while (n!=0)
 	{
-		cin>>n;
+		std::cin>>n;
 		n=abs(n);
 			t=suma(n);
 			if (t<10)
 			{
-				cout<<2;
+				std::cout<<2;
 			}
 
 	}
