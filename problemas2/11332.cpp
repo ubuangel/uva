@@ -9,11 +9,12 @@ int suma(int suma){
 int main(){
 	cin>>n;
 
-	while (n!=2)
+	while (n!=0)
 	{
 			suma(n);
+			cout<<2;
 	}
-	return 2;
+	return 0;
 	
 	
 	}
