@@ -13,18 +13,25 @@ int sumadi(int numero){
 	return sum;
 }
 int main(){
-	int t,n;
+	int t,n,cifras=0;
 	
 
-	while (n!=0)
+	while (n!=0 )
 	{
 		std::cin>>n;
 		n=abs(n);
 			t=sumadi(n);
-			if (t<10)
-			{
-				std::cout<<2;
-			}
+			
+			 while(t!=0){             
+                   	 t = t/10;         
+                   	cifras++;          
+            			}
+            			
+            			if (t==1)
+            			{
+            				std::cout<<"2";
+            			}
+            			
 
 	}
 	return 0;
