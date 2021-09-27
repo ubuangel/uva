@@ -7,12 +7,19 @@ int suma(int suma){
 	return resultado;
 }
 int main(){
-	cin>>n;
+	int veces,n;
+	
 
 	while (n!=0)
 	{
-			suma(n);
-			cout<<2;
+		cin>>n;
+		n=abs(n);
+			t=suma(n);
+			if (t<10)
+			{
+				cout<<2;
+			}
+
 	}
 	return 0;
 	
