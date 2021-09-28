@@ -1,39 +1,48 @@
 #include <iostream>
 #include <string>
 
-int sumadi(int numero){
-	int num,sum=0;
-	 while(numero != 0) {
-        num = numero % 10;
-        numero /= 10;
-        sum += num;
-    }
-
+int sumadi(int t){
 	
-	return sum;
+	int j,sum=0;
+	 if (t<10)
+	 return t;
+	 
+	 else{
+	 	
+	 	
+	 	j=0;
+	 	while(true){   
+	 	
+	 		sum+=t%10;          
+                   	 t = t/10;    
+                   	      
+                   	j++;          
+            		
+            			
+            		if (t==0){
+            			
+            			break;
+            			}
+
+            		 }
+	return sumadi(sum);
+	 }
+	
+	
 }
 int main(){
-	int t,n,cifras=0;
+	int n;
 	
 
-	while (n!=0 )
-	{
-		std::cin>>n;
-		n=abs(n);
-			t=sumadi(n);
+	while (std::cin>>n && n!=0  )
+		{
 			
-			 while(t!=0){             
-                   		 t = t/10;         
-                   		cifras++;          
-            			}
-            			
-            			if (cifras==1)
-            			{
-            				std::cout<<"2"<<std::endl;
-            			}
-            			
+		
+		std::cout<<sumadi(n)<<std::endl;
+			
+			 			
 
-	}
+		}
 	return 0;
 	
 	
