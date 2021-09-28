@@ -2,21 +2,21 @@
 
 
 int main(){
-	int n;
-	cin>>n;
+	int n,x,y;
+	std::cin>>n;
 	for (unsigned int i = 0; i < n; i += 1)
 	{
-		cin>>x>>y;
+		std::cin>>x>>y;
 		
 		if (x<y)
 		{
-			cout<<"<";
+			std::cout<<"<";
 		}else if(x>y){
 			
-			cout<<">";
+			std::cout<<">";
 		}else{
 			
-			cout<<"=";
+			std::cout<<"=";
 		}
 			
 		
