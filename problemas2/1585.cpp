@@ -5,17 +5,19 @@ using namespace std;
 int main(){
 	//int x=1, y=1;
 	string cadena;
-		int cont=0;
+		int i,cont=0;
 		int n,suma=0;
-	while( cin>>n ){
+	while( i<n ){
 		 getline(cin,cadena);
-		if(cadena=="x"){
-			suma=suma+cont;
+		if(cadena[i]=='0'){
 			cont++;
+			suma=suma+cont;
 		}
+		if(cadena[i]=='X')
 		cont=0;
 		cout<<suma<<endl;
 		
+		i++;
 				
 	}
 	return 0;
