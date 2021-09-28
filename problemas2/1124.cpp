@@ -1,9 +1,12 @@
 #include <iostream>
 #include <string>
-#define resolver(x) std::cerr <<x<<"="<<x<<std::endl;
+#define resolver(x) std::cerr <<#x<<"="<<x<<std::endl;
 int main(){
-	int x;
-	while(std::cin>>x && x!=0){
+	int x=1;
+	
+	while( x!=0){
+		std::cout<<"x=";std::cin>>x;
+		
 		resolver(x);
 	}
 	
