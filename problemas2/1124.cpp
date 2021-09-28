@@ -1,15 +1,17 @@
 #include <iostream>
 #include <string>
-#define resolver(y) std::cerr <<#y<<"="<<y<<std::endl;
+using namespace std;
+
 int main(){
-	int x=1, y=1;
-	
-	while( x!=0 && y!=0){
-		std::cout<<"y=";std::cin>>y;
-		std::cout<<"x=";std::cin>>x;
+	//int x=1, y=1;
+	string cadena;
+	while( getline(cin,cadena)){
+		
+		cout << cadena << endl;
 		
 				
-		resolver(x);
+
 	}
+	return 0;
 	
 }
