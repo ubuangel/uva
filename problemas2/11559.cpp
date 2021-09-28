@@ -25,6 +25,7 @@ int main(){
 		//ultima
 	//	cuartos[y ] numeros de cuartos en cada  semana y
 		//segunda linea empiza caurtos[i]=cuartos en  la semana  i  resultado=false;
+		if(cuartos[i])
 		
 		if()
 		num*c<pre 
