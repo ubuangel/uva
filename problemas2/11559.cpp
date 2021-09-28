@@ -24,7 +24,12 @@ int main(){
 		
 		//ultima
 	//	cuartos[y ] numeros de cuartos en cada  semana y
-		//segunda linea empiza caurtos[i]=cuartos en  la semana  i  false;
+		//segunda linea empiza caurtos[i]=cuartos en  la semana  i  resultado=false;
+		
+		if()
+		num*c<pre 
+		resultado=true
+		cout<<num*c;
 		
 		
 				
