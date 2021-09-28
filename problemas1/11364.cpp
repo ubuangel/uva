@@ -22,8 +22,8 @@ int main(){
 	
 	
 	minimo=2*(d1-d2);
+	std::cout<<minimo<<std::endl;
 	i++;	
 	}
-	std::cout<<minimo<<std::endl;
 	
 }
