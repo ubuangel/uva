@@ -1,19 +1,26 @@
+
+
 #include <iostream>
 #include <string>
+
+
+
+
 using namespace std;
+
+
+
 int main(){
 	
 	while(true){
 		
 int num1,num2,num3,num4;
 		
-	cin>>num1,num2,num3,num4;
+	cin>>num1>>num2>>num3>>num4;
 int sumatotal=0;
 		
 	
-		if (num1==0 & num2==0 & num3==0 & num4==0)
-		
-			break;
+		if (num1==0 & num2==0 & num3==0 & num4==0)break;
 		
 		
 		sumatotal+=80;
