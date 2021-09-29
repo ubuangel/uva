@@ -1,7 +1,7 @@
 #include<iostream>
 int simbolo(){
 	
-	scwich(){
+	swich(){
 		
 		case '(': return
 			case ')': return
@@ -12,5 +12,17 @@ int simbolo(){
 
 int main(){
 	
+	int i=0;
+	while(i<n){
+		
+		int caso,i;
+		
+		char cadena1,cadena2;
+		
+		
+		
+		
+		i++;
+	}
 	
 }
