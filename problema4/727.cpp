@@ -1,23 +1,28 @@
 #include<iostream>
-int simbolo(){
+#include<stack>
+
+using namespace std;
+int simbolo(char caracter){
 	
-	swich(){
+	switch(caracter){
 		
-		case '(': return
-			case ')': return
-			case'+': return 
-			case'-': return 
+		case '(': return 1;
+			
+			case'+': return 2; 
+			case'-': return 2;
+			case'*': return 3;
+			case'/': return 3;
 	}
 }
 
 int main(){
 	
 	int i=0;
-		char cadena1[],caracter;
-		cin>>cadena1>>cadena2;
-	while(i<n){
-		satack <char> pila;
-		int caso,i;
+		char cadena1[10],caracter;
+		int caso;
+		cin>>caso;
+	while(i<caso){
+		stack <char> pila;
 		
 		while(cin>>cadena1 && cadena1.size()){
 			
@@ -34,14 +39,14 @@ int main(){
 			
 			else if(caracter=='+'||caracter=='-'||caracter=='*'||caracter=='/'){
 				
-				while(!pila.empty()$}&& simbolo(caracter)<pila.pop()){
+				while(!pila.empty() && simbolo(caracter)<=simbolo(pila.top())){
 					cout<<pila.top();
 					pila.pop();
 				}
 				pila.push(caracter);
 			}
 			
-			else if(c==')'){
+			else if(caracter==')'){
 				
 				while (pila.top()!='(')
 				{
@@ -50,15 +55,15 @@ int main(){
 				cout<<pila.top();
 				pila.pop();
 				}
-			}
 			pila.pop();
+			}
 			
-			else{
+				else{
 				
 				cout<<caracter;
+				}
+			
 			}
-			
-			
 			while(!pila.empty()){
 				cout<<pila.top();
 				pila.pop();
@@ -71,15 +76,9 @@ int main(){
 				cout<<endl;
 			}
 			
+		i++;
 		}
 	
 		
-		
-		
-		
-		
-		
-		i++;
-	}
 	
 }

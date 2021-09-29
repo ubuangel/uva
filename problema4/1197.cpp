@@ -16,7 +16,12 @@ int main(){
 		{
 			cin>>cont;
 			
-			
+			if (cont>0)
+			{
+				cin>>estudiante;
+				union(estudiante,otros);
+				
+			}
 		}
 		
 		
@@ -24,6 +29,8 @@ int main(){
 		
 		it++;
 	}
+	
+	cout<<
 	
 	
 }
