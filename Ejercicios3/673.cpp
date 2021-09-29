@@ -9,15 +9,37 @@ int main(){
 		string cadena;
 		cin>>cadena;
 		
-		for (unsigned int i = 0; i < cadena.size(); i += 1)
-		{
+		
+		
 			
-			if()
-			if (cadena[0]=" " && cadena[1]=" ")
-			{
-				cout<<"True";
+			if(cadena[0]='\0'){
+			
+				cout<<"Yes";
+			}else{
+				
+				
+				bool bandera=true;
+				
+				for (unsigned int i = 0; i < cadena.size() && bool=true;i += 1)
+				{
+					char ch =cadena[i];
+					
+					if (condition)
+					{
+						
+					}else if (condition)
+					{
+						
+					}else if (condition)
+					{
+						
+					}else{
+						
+						
+					}
+				}
 			}
-		}
+		
 		
 		
 		
