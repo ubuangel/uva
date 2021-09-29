@@ -37,12 +37,29 @@ int main(){
 					}else if (pila==']' && !pila.empty()&& pila.top()=='[')
 					
 					{
-						pila.
+						pila.pop();
 					}else{
 						
-						
+						bandera=0;
 					}
 				}
+				
+				if (!pila.empty())
+				{
+					bandera=0;
+				}
+				
+				while (!pila.empty())
+					{
+					pila.pop();
+					}
+				
+				if (bandera)
+					{
+					cout<<"Yes"<<endl;
+				}else{
+					cout<<"No"<<endl;
+					}
 			}
 		
 		
@@ -51,4 +68,5 @@ int main(){
 		
 		i++;
 	}
+	return 0;
 }
