@@ -1,3 +1,7 @@
+#include<iostream>
+#include<stack>
+
+stack <char> pila;
 int main(){
 	
 	
@@ -22,17 +26,18 @@ int main(){
 				
 				for (unsigned int i = 0; i < cadena.size() && bool=true;i += 1)
 				{
-					char ch =cadena[i];
+					char caracter =cadena[i];
 					
-					if (condition)
+					if (caracter=='(' || caracter=='[')
 					{
-						
-					}else if (condition)
+						pila.push(caracter);
+					}else if (caracter==')'&& !pila.empy() && pila.top()=='(')
 					{
-						
-					}else if (condition)
+						pila.pop();
+					}else if (pila==']' && !pila.empty()&& pila.top()=='[')
+					
 					{
-						
+						pila.
 					}else{
 						
 						
