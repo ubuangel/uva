@@ -3,8 +3,8 @@
 
 using namespace std;
 
-stack <char> pila;
 int main(){
+stack <char> pila;
 	
 	
 	int C;
@@ -15,10 +15,8 @@ int main(){
 		string cadena;
 		cin>>cadena;
 		
-		
-		
 			
-			if(cadena[0]='\0'){
+			if(cadena[0]=='\0'){
 			
 				cout<<"Yes";
 			}else{
@@ -26,7 +24,7 @@ int main(){
 				
 				bool bandera=true;
 				
-				for (unsigned int i = 0; i < cadena.size() && bandera;i += 1)
+				for (unsigned int i = 0; i < cadena.size() && bandera;i+=1)
 				{
 					char caracter =cadena[i];
 					
@@ -44,22 +42,23 @@ int main(){
 				
 				}
 				
-				if (!pila.empty())
+				if (!pila.empty()){
+					
 					bandera=0;
+					}
 				while (!pila.empty())
 					pila.pop();
-				if (bandera)
+				if (bandera){
 					cout<<"Yes"<<endl;
-				else
-					cout<<"No"<<endl;
+				}
+				else {cout<<"No"<<endl;
+				}
 					
 			}
 		
 		
 		
-		
-		
-	}
 		i++;
+	}
 	return 0;
 }
