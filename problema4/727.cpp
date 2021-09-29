@@ -43,8 +43,32 @@ int main(){
 			
 			else if(c==')'){
 				
+				while (pila.top()!='(')
+				{
+					
+				
 				cout<<pila.top();
 				pila.pop();
+				}
+			}
+			pila.pop();
+			
+			else{
+				
+				cout<<caracter;
+			}
+			
+			
+			while(!pila.empty()){
+				cout<<pila.top();
+				pila.pop();
+			}
+			
+			cout<<"endl";
+			
+			if (caso)
+			{
+				cout<<endl;
 			}
 			
 		}
