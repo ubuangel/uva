@@ -1,6 +1,8 @@
 #include<iostream>
 #include<stack>
 
+using namespace std;
+
 stack <char> pila;
 int main(){
 	
@@ -8,7 +10,7 @@ int main(){
 	int C;
 	int i=0;
 	cin>>C;
-	while(i<n){
+	while(i<C){
 		
 		string cadena;
 		cin>>cadena;
@@ -24,14 +26,14 @@ int main(){
 				
 				bool bandera=true;
 				
-				for (unsigned int i = 0; i < cadena.size() && bool=true;i += 1)
+				for (unsigned int i = 0; i < cadena.size() && bandera;i += 1)
 				{
 					char caracter =cadena[i];
 					
 					if (caracter=='(' || caracter=='[')
 					{
 						pila.push(caracter);
-					}else if (caracter==')'&& !pila.empy() && pila.top()=='(')
+					}else if (caracter==')'&& !pila.empty() && pila.top()=='(')
 					{
 						pila.pop();
 					}else if (pila==']' && !pila.empty()&& pila.top()=='[')
