@@ -36,39 +36,30 @@ int main(){
 					}else if (caracter==')'&& !pila.empty() && pila.top()=='(')
 					{
 						pila.pop();
-					}else if (pila==']' && !pila.empty()&& pila.top()=='[')
+					}else if (caracter==']' && !pila.empty()&& pila.top()=='[')
 					
 					{
 						pila.pop();
-					}else{
-						
-						bandera=0;
-					}
+					}else bandera=0;
+				
 				}
 				
 				if (!pila.empty())
-				{
 					bandera=0;
-				}
-				
 				while (!pila.empty())
-					{
 					pila.pop();
-					}
-				
 				if (bandera)
-					{
 					cout<<"Yes"<<endl;
-				}else{
+				else
 					cout<<"No"<<endl;
-					}
+					
 			}
 		
 		
 		
 		
 		
-		i++;
 	}
+		i++;
 	return 0;
 }
