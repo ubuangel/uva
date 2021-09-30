@@ -3,19 +3,20 @@
 using namespace std;
 int main(){
 	
-	int i=0;
+
 	int dias;
 	while(cin>>dias,dias){
 		
 		multiset <int>contenedor;
 		
 		long costo=0;
+			int i=0;
 		while(i<dias){
 			
 			int k;	
 			cin>>k;
 			
-			for (unsigned int t = 0; t < k; t += 1)
+			for ( unsigned int t = 0; t < k; t += 1)
 			{
 				int q;
 				cin>>q;
@@ -26,7 +27,7 @@ int main(){
 			multiset<int>::iterator mayor=--contenedor.end();
 			
 			
-			costo+=*mayor-*menor;
+			costo+=*mayor - *menor;
 			
 			contenedor.erase(menor);
 			contenedor.erase(mayor);
