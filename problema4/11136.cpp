@@ -9,7 +9,7 @@ int main(){
 		
 		set <int>contenedor;
 		
-		long costo;
+		long costo=0;
 		while(i<dias){
 			
 			int k;	
