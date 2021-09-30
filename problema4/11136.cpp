@@ -3,17 +3,22 @@
 int main(){
 	
 	int i=0;
-	while(i<n){
+	int dias;
+	while(cin>>dias){
 		
-		set <int,int>asociador;
 		
+		set <int>contenedor;
 		
-		while(){
+		long costo;
+		while(i<dias){
+			
+			int k;
 			
 			
+			i++;
 		}
 		
-		i++; 
+		
 	}
 	
 }
