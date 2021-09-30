@@ -1,11 +1,11 @@
 #include<iostream>
 #include<set>
+using namespace std;
 int main(){
 	
 	int i=0;
 	int dias;
-	while(cin>>dias){
-		
+	while(cin>>dias,dias){
 		
 		set <int>contenedor;
 		
