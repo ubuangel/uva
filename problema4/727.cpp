@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stack>
+#include<cstring>
 
 using namespace std;
 int simbolo(char caracter){
@@ -24,7 +25,7 @@ int main(){
 	while(i<caso){
 		stack <char> pila;
 		
-		while(cin>>cadena1 && cadena1.size()){
+		while(cin>>cadena1 && strlen(cadena1)){
 			
 			caracter=cadena1[0];
 			
