@@ -7,7 +7,7 @@ int main(){
 	int dias;
 	while(cin>>dias,dias){
 		
-		set <int>contenedor;
+		multiset <int>contenedor;
 		
 		long costo=0;
 		while(i<dias){
@@ -22,11 +22,11 @@ int main(){
 				contenedor.insert(q);
 			}
 			
-			set<int>::iterator menor=contenedor.begin();
-			set<int>::iterator mayor=--contenedor.end();
+			multiset<int>::iterator menor=contenedor.begin();
+			multiset<int>::iterator mayor=--contenedor.end();
 			
 			
-			costo=costo+*mayor-*menor;
+			costo+=*mayor-*menor;
 			
 			contenedor.erase(menor);
 			contenedor.erase(mayor);
