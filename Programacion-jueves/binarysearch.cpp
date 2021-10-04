@@ -43,8 +43,8 @@ int main()
    // vector<int>ma;
     int MA[5][5];
     vector <int> A;
-	int tam,cont=0;
-   
+	int tam;
+   	size_t cont=0;
         cin>>tam;
         for (unsigned int i = 0; i < tam; i += 1)
         {
