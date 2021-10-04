@@ -17,14 +17,14 @@ void  sumaobjetivo(vector<int> A ,int objetivo ){
     while (iter1<=iter2)
     {
     	
-    	suma=A[iter1]+A[iter2];
+    int suma=A[iter1]+A[iter2];
     	
     	if (objetivo==suma)
     	{
-    		cout<"posicion : {" iter1<<" , "<<iter2<<" }"<<endl;
+    		cout<<"posicion : {" <<iter1<<" , "<<iter2<<" }"<<endl;
     	}
     	else if(objetivo>suma){
-    		iterador++;
+    		iter1++;
     		
     		}
     		
@@ -48,13 +48,13 @@ int main()
 
     
  
-     cout<<"ingresar numero a buscar :"<<endl;
-     int buscar;cin>>buscar;
+     cout<<"ingresar objetivo :"<<endl;
     
+    int objetivo;cin>>objetivo;
      
   
     vector <int> A{1,2,7,9,11,15};
- 	int objetivo=11;
+
     sumaobjetivo(A,objetivo);
 
  
