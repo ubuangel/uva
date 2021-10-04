@@ -10,8 +10,10 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <algorithm>
 using namespace std;
 
-bool sumaobjetivo(vector<int> A ,int objetivo ){
-    int medio;
+void  sumaobjetivo(vector<int> A ,int objetivo ){
+    int iter1=0;
+    int iter2=A.size()-1;
+    
     while (iter1<=iter2)
     {
     	
@@ -19,16 +21,22 @@ bool sumaobjetivo(vector<int> A ,int objetivo ){
     	
     	if (objetivo==suma)
     	{
-    		cout<iter1<<iter2;
+    		cout<"posicion : {" iter1<<" , "<<iter2<<" }"<<endl;
     	}
     	else if(objetivo>suma){
     		iterador++;
     		
     		}
     		
-    	else{
+    	else if(objetivo<suma){
     		
     		iter2--;
+    		
+    	}
+    		
+    	else{
+    		cout<<" no "<<endl;
+    		
     	}
     }
     
