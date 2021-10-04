@@ -14,31 +14,30 @@ void  sumaobjetivo(vector<int> A ,int objetivo ){
     int iter1=0;
     int iter2=A.size()-1;
     
-    while (iter1<=iter2)
+    while (iter1<iter2)
     {
     	
     int suma=A[iter1]+A[iter2];
     	
-    	if (objetivo==suma)
+    	if (objetivo<suma)
     	{
-    		cout<<"posicion : {" <<iter1<<" , "<<iter2<<" }"<<endl;
+    		iter2--;
     	}
     	else if(objetivo>suma){
     		iter1++;
     		
     		}
     		
-    	else if(objetivo<suma){
+    	else {
     		
-    		iter2--;
-    		
-    	}
-    		
-    	else{
-    		cout<<" no "<<endl;
+    		break;
     		
     	}
+    		
+    	
     }
+    
+    cout<<" ["<<iter1<<" ,"<<iter2<<" ]";
     
 }
 
@@ -53,7 +52,7 @@ int main()
     int objetivo;cin>>objetivo;
      
   
-    vector <int> A{1,2,7,9,11,15};
+    vector <int> A{1,2,3,4,6,7,10,12};
 
     sumaobjetivo(A,objetivo);
 
