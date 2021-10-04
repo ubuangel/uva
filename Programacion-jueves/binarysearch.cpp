@@ -44,7 +44,7 @@ int main()
     int MA[5][5];
     vector <int> A;
 	int tam;
-   	size_t cont=0;
+   	
         cin>>tam;
         for (unsigned int i = 0; i < tam; i += 1)
         {
@@ -52,8 +52,9 @@ int main()
         	{
         		cin>>MA[i][j];
         		
-        		A[cont]=MA[i][j];
-        		cont++;
+        		A.push_back(MA[i][j]);
+        		//A[cont]=MA[i][j];
+        		
         		
         	}
         }
