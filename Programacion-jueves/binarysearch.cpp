@@ -58,7 +58,7 @@ int main()
         	}
         }
         
-        for (unsigned int t = 0; t < cont; t += 1)
+        for (unsigned int t = 0; t < cont-1; t += 1)
         {
         	cout<<A[t];
         }
