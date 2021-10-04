@@ -5,9 +5,9 @@
 Write your code in this editor and press "Run" button to compile and execute it.
 
 *******************************************************************************/
-
 #include <iostream>
 #include<vector> 
+#include <algorithm>
 using namespace std;
 
 bool busqueda(vector<int> A ,int alto,int buscar ){
@@ -38,17 +38,30 @@ bool busqueda(vector<int> A ,int alto,int buscar ){
             return false;
         }
 }
+
 int main()
 {
-   // vector<int>ma;
-    int MA[5][5];
+   
+
+    
+    cout<<"ingresar el largo y el ancho de la matriz :"<<endl;
+    int ilargo;cin>>ilargo;
+    int jancho;cin>>jancho;
+    
+     cout<<"ingresar numero a buscar :"<<endl;
+     int buscar;cin>>buscar;
+    
+     cout<<"ingresar numeros de la matriz :"<<endl;
+    vector<vector<int> >MA(ilargo,vector<int>(jancho));
     vector <int> A;
-	int tam;
-   	
-        cin>>tam;
-        for (unsigned int i = 0; i < tam; i += 1)
+	
+        
+        
+        
+        
+        for ( int i = 0; i < ilargo; i += 1)
         {
-        	for (unsigned int j = 0; j < tam; j += 1)
+        	for ( int j = 0; j < jancho; j += 1)
         	{
         		cin>>MA[i][j];
         		
@@ -60,19 +73,23 @@ int main()
         }
         
      
+sort(A.begin(),A.end());
 
-    int buscar=19;
 
-    
+
  int  alto = (sizeof(A) / sizeof(int))-1;
  
- cout<<busqueda(A,alto,buscar);
+ if(busqueda(A,alto,buscar)){
+ 	cout<<"True";
+ }else{ cout<<"False";}
  
  
  
+ return 0;
  
     
     }
+    
     
    
 
