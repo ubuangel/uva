@@ -10,7 +10,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include<vector> 
 using namespace std;
 
-bool busqueda(int A[] ,int alto,int buscar ){
+bool busqueda(vector<int> A ,int alto,int buscar ){
     int medio;
     int minimo=0;
     while(minimo<=alto){
