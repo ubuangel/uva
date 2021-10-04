@@ -10,16 +10,26 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <algorithm>
 using namespace std;
 
-bool busqueda(vector<int> A ,int alto,int buscar ){
+bool sumaobjetivo(vector<int> A ,int objetivo ){
     int medio;
-    while (buscar==iterador)
+    while (iter1<=iter2)
     {
-    	if (buscar<A[iterador])
+    	
+    	suma=A[iter1]+A[iter2];
+    	
+    	if (objetivo==suma)
     	{
-    		iterador++;
+    		cout<iter1<<iter2;
     	}
-    	else if(buscar>A[iterador])
+    	else if(objetivo>suma){
     		iterador++;
+    		
+    		}
+    		
+    	else{
+    		
+    		iter2--;
+    	}
     }
     
 }
@@ -35,22 +45,9 @@ int main()
     
      
   
-    vector <int> A{4,5,7,1,3,2,8};
-    for (unsigned int i = 0; i < A.size(); i += 1)
-    {
-    	cin>>A[i];
-    }
-    
-	
-        
-        
-        
-        
-       
-     
-
-
-
+    vector <int> A{1,2,7,9,11,15};
+ 	int objetivo=11;
+    sumaobjetivo(A,objetivo);
 
  
  return 0;
