@@ -40,9 +40,9 @@ bool busqueda(int A[] ,int alto,int buscar ){
 }
 int main()
 {
-    vector<int>ma;
+   // vector<int>ma;
     int MA[5][5];
-    int A[20];
+    vector <int> A;
 	int tam,cont=0;
    
         cin>>tam;
