@@ -10,9 +10,9 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include<vector> 
 using namespace std;
 
-bool busqueda(int A[] ,int minimo,int alto,int buscar ){
+bool busqueda(int A[] ,int alto,int buscar ){
     int medio;
-    
+    int minimo=0;
     while(minimo<=alto){
         
         
@@ -40,7 +40,7 @@ bool busqueda(int A[] ,int minimo,int alto,int buscar ){
 }
 int main()
 {
-    //vector<>ma;
+    vector<int>ma;
     int MA[5][5];
     int A[20];
 	int tam,cont=0;
@@ -58,18 +58,14 @@ int main()
         	}
         }
         
-        for (unsigned int t = 0; t < cont; t += 1)
-        {
-        	cout<<A[t];
-        }
-        cout<<endl;
+     
 
     int buscar=19;
-    int minimo=0;
+
     
  int  alto = (sizeof(A) / sizeof(int))-1;
  
- cout<<busqueda(A,minimo,alto,buscar);
+ cout<<busqueda(A,alto,buscar);
  
  
  
