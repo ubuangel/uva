@@ -2,7 +2,7 @@
 #include<vector> 
 #include <algorithm>
 using namespace std;
-
+//Se le da una matriz de n números enteros y su tarea es encontrar dos valores (en posiciones distintas) cuya suma sea x. 	
 void  sumaobjetivo(vector<int> A ,int objetivo ){
     int iter1=0;
     int iter2=A.size()-1;
@@ -21,18 +21,25 @@ void  sumaobjetivo(vector<int> A ,int objetivo ){
     		
     		}
     		
-    	else {
+    	else if(suma==objetivo){
     		
-    		break;
+    		 cout<<iter1+1<<" "<<iter2+1;
+    		return;//para ciclo infito 0 2 
     		
+    		}
+    		
+    	
     	}
+    	
+    	
     		
+    cout << "IMPOSSIBLE" << endl;
     	
     }
     
-    cout<<iter1+1<<" "<<iter2+1;
     
-}
+   
+    
 
 int main()
 {
@@ -52,6 +59,7 @@ int main()
     	cin>>a;
     	A.push_back(a);
     }
+    sort(A.begin(),A.end());
 
     sumaobjetivo(A,objetivo);
 

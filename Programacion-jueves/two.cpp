@@ -10,7 +10,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <algorithm>
 using namespace std;
 
-void  sumaobjetivo(vector<int> A ,int objetivo ){
+void  sumaobjetivo(vector<int>& A ,int objetivo ){
     int iter1=0;
     int iter2=A.size()-1;
     
@@ -52,7 +52,9 @@ int main()
     int objetivo;cin>>objetivo;
      
   
-    vector <int> A{1,2,3,4,6,7,10,12};
+    vector <int> A{2,7,5,1};
+   // sort(A.begin(),A.end());
+
 
     sumaobjetivo(A,objetivo);
 
