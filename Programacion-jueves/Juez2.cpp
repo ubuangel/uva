@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std;
+
+//limite https://cses.fi/problemset/result/2949484/#test8
 int main(){
 	
 	int objetivo,n;
@@ -16,7 +18,7 @@ for (unsigned int i = 0; i < n; i += 1)
 
 	for (unsigned int i = 0; i < n-1; i += 1)
 	{
-		int suma;
+		
 		for (unsigned int j = i+1; j < n; j += 1)
 		{
 			
