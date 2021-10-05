@@ -4,7 +4,7 @@ int main(){
 	
 	int objetivo,n;
 	cin>>n>>objetivo;
-	int
+	int A[n];
 
 for (unsigned int i = 0; i < n; i += 1)
 {
@@ -38,6 +38,6 @@ for (unsigned int i = 0; i < n; i += 1)
 		
 		
 	}
-	cout<<"IMposible"<<endl;
+	cout<<"IMPOSSIBLE"<<endl;
 
 }
