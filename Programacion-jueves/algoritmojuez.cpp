@@ -6,7 +6,7 @@ using namespace std;
 void  sumaobjetivo(vector<int> A ,int objetivo ){
     int iter1=0;
     int iter2=A.size()-1;
-    
+
     while (iter1<iter2)
     {
     	
@@ -59,7 +59,8 @@ int main()
     	cin>>a;
     	A.push_back(a);
     }
-    sort(A.begin(),A.end());
+    cout<<A.size();
+    //sort(A.begin(),A.end());
 
     sumaobjetivo(A,objetivo);
 
