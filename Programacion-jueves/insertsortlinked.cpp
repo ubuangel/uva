@@ -13,6 +13,12 @@ class nodo{
 	
 	
 	
-}
+};
 
+
+
+int main(){
+	
+	
+}
 
