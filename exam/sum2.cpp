@@ -13,19 +13,19 @@ int main(){
 	int t,a,b;
 	cin>>t>>a>>b;
 	vector<int> array(t+1);
-	for (unsigned int i = 1; i <= t; i += 1)
+	for (int i = 1; i <= t; i += 1)
 	{
 		cin>>array[i];
 	}
 	
-	for (unsigned int i = 1; i <= t; i += 1)
+	for ( int i = 1; i <= t; i += 1)
 	{
 		array[i]+=array[i-1];
 	}
 	
 	set<pair<tipogrande,int>> derechop;
 	    
-	for (unsigned int i = a; i <= b; i += 1)
+	for ( int i = a; i <= b; i += 1)
 	{
 		derechop.insert({array[i],i});
 		
@@ -33,13 +33,13 @@ int main(){
 	}
 	tipogrande maximasuma=-INF;
 	
-	for (unsigned int i = 1; i <= n-a+1; i += 1)
+	for (int i = 1; i <= t-a+1; i += 1)
 	{
-		maximasuma=max(maximasuma,derechop.rbegin()->firts-array[i-1]);
+		maximasuma=max(maximasuma,derechop.rbegin()->first-array[i-1]);
 		
 		derechop.erase({array[i+a-1],i+a-1});
 		
-		if (i+b<=n)
+		if (i+b<=t)
 		{
 			derechop.insert({array[i+b],i+b});
 			
