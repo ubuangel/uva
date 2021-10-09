@@ -6,9 +6,9 @@ void actualizar(int array[],int a,int b){
 	
 	array[a]=b;
 }
-void sumarango(int array[],int a,int b){
+int  sumarango(int array[],int a,int b){
 	int sum=0;
-	for (unsigned int i = a; i < b; i += 1)
+	for (unsigned int i = a; i <=b; i += 1)
 	{
 		sum+=array[i];
 	}
@@ -16,10 +16,12 @@ void sumarango(int array[],int a,int b){
 }
 
 int main(){
+	
 	int n ,q;
 	int n1,n2,n3;
-	cin>>n>>q
-	for (unsigned int i = 0; i < n; i += 1)
+	cin>>n>>q;
+	int array[n];
+	for (unsigned int i = 1; i <=n; i += 1)
 	{
 		cin>>array[i];
 	}
@@ -37,5 +39,5 @@ int main(){
 	}
 	
 	
-	return type 2
+	return 0;
 }
