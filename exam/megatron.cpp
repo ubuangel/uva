@@ -25,15 +25,30 @@ int main(){
 		for (unsigned int i = 0; i < n; i += 1)
 		{
 			s+=datos[i];
-		}
-		
-		if (condition)
+			tam´;
+			
+			if (s>m && )
+			{
+				m_sum=s;
+				m_tam=tam;
+			}else if(tam==m_tam{
+				
+				m_lem=lem;
+				m_sum=s;
+			}
+			while (s>m)
 			{
 				
-			}else{
-				
+				tam--;
+			}
+			if (s<m && tam)
+			{
 				
 			}
+			
+		}
+		
+		
 		
 		iter++;
 	}
