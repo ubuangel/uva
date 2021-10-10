@@ -1,18 +1,19 @@
 #include <iostream>
 #include<vector> 
-#include <algorithm>
-#include <iterator>
-#include <set>
 
+
+#include <set>
+#define ln '\n'
 #define INF 1e18
 
 using namespace std;
 
 typedef long long tipogrande;
+
 int main(){
 	int t,a,b;
 	cin>>t>>a>>b;
-	vector<int> array(t+1);
+	vector<tipogrande> array(t+1);
 	for (int i = 1; i <= t; i += 1)
 	{
 		cin>>array[i];
