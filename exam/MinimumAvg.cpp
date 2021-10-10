@@ -13,6 +13,7 @@ int main(){
 	vector<int>A
 	for (unsigned int i = 0; i < A.size()-2; i += 1)
 	{
-		float 
+		float v1=(float)((A[i]+A[i+1]+A[i+2])/3)
+		float v2=(float)((A[i]+A[i+1])/2)
 	}
 }
