@@ -23,7 +23,7 @@ int main(){
 	
 	for (unsigned int i = 0; i < n; i += 1)
 	{
-		while(pila.size()>0 && pila.top().first>=valores[i]){
+		while(pila.size()>0 && pila.top().first>=valores[i])
 			pila.pop();
 			
 			if (pila.size()>0)
@@ -37,6 +37,6 @@ int main(){
 			
 			pila.push({valores[i],i+1});
 			
-		}
+		
 	}
 }
