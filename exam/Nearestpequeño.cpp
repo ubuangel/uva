@@ -2,24 +2,27 @@
 #include<vector> 
 #include <algorithm>
 
+
+typedef long long tipogrande; 
+
 int main(){
 	int n;
 	cin>>n;
-	int A[n];
+	stack<pair<int>> pila;
+	vector<int>valores(n);
+	
+	
 	
 	for (unsigned int i = 0; i < n; i += 1)
 	{
-		cin>>A[i];
+		cin>>valores[i];
 	}
 	
 	for (unsigned int i = 0; i < count; i += 1)
 	{
-		for (unsigned int j = i; i >0; j--)
-		{
-			if (condition)
-			{
-				
-			}
+		while(){
+			
+			
 		}
 	}
 }
