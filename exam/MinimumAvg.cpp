@@ -19,7 +19,7 @@ int mini(int x,int y){
 
 int main(){
 	int mini=0;
-	int max=INT_MAX;
+	float maxi=INT_MAX;
 	int n,a;
 	cin>>n;
 	vector<int>A;
@@ -35,13 +35,13 @@ int main(){
 		float v1=(float)((A[i]+A[i+1]+A[i+2])/3);
 		float v2=(float)((A[i]+A[i+1])/2);
 		
-		if (max>v1 || max>v2)
+		if (maxi>v1 || maxi>v2)
 		{
-			max=min(v1,v2);
+			maxi=min(v1,v2);
 			mini=i;
 		}
 	}
-	if (max>(A[A.size()-1]+A[A.size()-2])/2)
+	if (maxi>(A[A.size()-1]+A[A.size()-2])/2)
 	
 	{
 		return (A.size()-2);
