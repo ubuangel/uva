@@ -20,8 +20,13 @@ int main(){
 	
 	for (unsigned int i = 0; i < count; i += 1)
 	{
-		while(){
+		while(pila.size()>0 && pila.top().first>=valores[i]){
+			pila.pop();
 			
+			if (pila.size()>0)
+			{
+				cout<<pila.top().
+			}
 			
 		}
 	}
