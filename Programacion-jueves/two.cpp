@@ -37,7 +37,8 @@ void  sumaobjetivo(vector<int>& A ,int objetivo ){
     	
     }
     
-    cout<<" ["<<iter1+1<<" ,"<<iter2+1<<" ]";
+  //  cout<<" ["<<iter1+1<<" ,"<<iter2+1<<" ]";
+   cout<<iter1+1<<" "<<iter2+1;
     
 }
 
@@ -53,7 +54,7 @@ int main()
      
   
     vector <int> A{2,7,5,1};
-   // sort(A.begin(),A.end());
+   //sort(A.begin(),A.end());
 
 
     sumaobjetivo(A,objetivo);
