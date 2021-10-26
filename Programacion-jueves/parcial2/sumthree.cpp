@@ -1,22 +1,25 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-//https://stackoverflow.com/questions/62309918/search-unsorted-array-for-3-elements-which-sum-to-a-value
+//ojo ver validacion
 //problema 4
 //https://cses.fi/problemset/task/1640/
+
 int main()
 {
-	int tam,objetivo;
+	int entrada,tam,objetivo;
 	std::cin>>tam>>objetivo;
-    std::vector<int> vector(tam);
+	
+	std::vector<int> vector(tam,0);
     
-    for (int i = 0; i < tam; i += 1)
+    for ( int i = 0; i < tam; i += 1)
     {
     	std::cin>>vector[i];
+    	
     }
     std::sort(vector.begin(), vector.end());
-
-    
+	
+ 
     int no_ = 1;
     
 
@@ -39,7 +42,7 @@ int main()
             else if ((vector[empieza_ptr] + vector[final_ptr]) < nuevo_)
                 empieza_ptr++;
             else {
-                std::cout << "indices : " << final_ptr << ", " << empieza_ptr << ", " << i << std::endl;
+                std::cout<< i << " " << empieza_ptr << " " << final_ptr << std::endl;
                 no_ = 0;
                 break;
             }
