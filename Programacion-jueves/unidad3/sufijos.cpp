@@ -1,29 +1,50 @@
-#include<iostream>
-#include<algorithm>
-#include<vector>
+// C++14 programa para construir sufijos  tiempo O(nlogn) ;
 
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-	
-	string cadena="cadena";
-	vector<int>arreglo(10);
-	
-	for (unsigned int i = 0; i < cadena.length(); i += 1)
-	{
-		cout<<i<<":";
-		for (unsigned int j = 0; j < i+1; j += 1)
-		{
-			//cout<<endl;
-			cout<<cadena[j];
-		}
-		
-		cout<<endl;
+int main()
+{
+	string cad = "banana";
+	int n = cad.length();
+	map<string, int> Map;
+	int sufijos[n];
+
+	// mapeando
+	// 
+	string sub = "";
+	for (int i = n - 1; i >= 0; i--) {
+		sub = cad[i] + sub;
+		Map[sub] = i;
 	}
 
-	cout<<" "<<endl;
+	// ordenando todos los valores en la estructura map
+	// en el  array de sufijos
+	int j = 0;
+	for (auto x : Map) {
+		sufijos[j] = x.second;
+		j++;
+	}
 
-	return 0;
+	// imprimieindo el array de prefijos.
+	cout << "Array de sufijos para "<<cad<< endl;
+	//int i;
+	for (int i = 0; i < n; i++) {
+		cout << sufijos[i] << " ";
+		//cout << endl;
+		
+		for (unsigned int t = sufijos[i]; t < n; t += 1)
+			{
+				cout<<cad[t];
+			}
+			cout<<endl;
+		
+		
+	}
+
+	
+	//cout << endl;
 
 
 }
+
