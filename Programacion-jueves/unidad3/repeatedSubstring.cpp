@@ -79,7 +79,6 @@ int main()
 {
   
 
-
     int T, n, sz, i, o, ans;
     cin >> T;
     while(T--){
