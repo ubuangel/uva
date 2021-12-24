@@ -21,9 +21,9 @@ int main(){
 			else
 				odd_count+=cadena[i]-'0';
 		if((once_count-odd_count)%11==0)
-			cout<<cadena<<"is a multiple of 11" <<"\n";
+			cout<<cadena<<" is a multiple of 11." <<"\n";
 		else
-			cout<<cadena<<" is not a multiple of 11"<<"\n";
+			cout<<cadena<<" is not a multiple of 11."<<"\n";
 	}
 	return 0;
 }
