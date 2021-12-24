@@ -36,7 +36,7 @@ int a;
         }
       }else{
 
-        cout<<"ingrese un numer omayor a 2"<<endl;
+        cout<<"ingrese un numero mayor a 2 y cero para terminar"<<endl;
       }
 
 
