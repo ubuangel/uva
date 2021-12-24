@@ -18,26 +18,30 @@ bool primo(int a){
 
     }
 
+    return true;
+
   }
 
 
 int main(){
-int a;
-    while (cin>>a && a!=0 ) {
+int num;
+    while (cin>>num && num!=0 ) {
       /* code */
+        cout<<"ingrese un numero mayor a 2 y cero para terminar"<<endl;
 
-      if (a>2) {
-        if(primo(a)){
+        for (size_t i = 0; i < count; i++) {
+          /* code */
 
-          cout<<"primo";
-        }else{
-            cout<<"no primo";
 
         }
-      }else{
 
-        cout<<"ingrese un numero mayor a 2 y cero para terminar"<<endl;
-      }
+
+        if (b-a=max) {
+
+          cout<<num<<" = "<<a<<" + "<<b<<endl;
+          /* code */
+        }
+
 
 
 
